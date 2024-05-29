@@ -110,7 +110,9 @@
             </div>
         </div>
 
-        <!-- Recommended Section -->
+<!------------------------------ Destop --------------------------------------------------------------->
+
+        <div class="md:flex md:flex-col hidden">
         <section class="mt-4 bg-white p-4 shadow rounded ">
             <h2 class="text-xl font-bold mb-2">แนะนำประจำวัน</h2>
             <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
@@ -264,13 +266,156 @@
 
 
             </div>
+
         </section>
-        <!-- Why Us Section -->
-        <section class="mt-4 bg-white p-4 shadow rounded">
-            <h2 class="text-xl font-bold mb-2">ทำไมต้องใช้บริการกับเรา?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. Habitant tincidunt id quis mattis. Dui eget vitae potenti mattis
-                est.</p>
-        </section>
+    </div>
+
+
+<!------------------------------ Mobile --------------------------------------------------------------->
+    <div class="flex md:hidden">
+        <div >
+            <div class="inline-flex space-x-2">
+                <button id="button1" class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">แนะนำประจำวัน</button>
+                <button id="button2" class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">โปรโมชั่น</button>
+                <button id="button3" class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">มาใหม่</button>
+            </div>
+            <section id="toggleSection1" class="hidden mt-4 p-4 bg-white shadow-md rounded">
+                <h2 class="text-xl font-bold mb-2">แนะนำประจำวัน</h2>
+                <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                    class="w-full h-full object-cover "></span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                    class="w-full h-full object-cover "></span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </section>
+            <section id="toggleSection2" class="hidden mt-4 p-4 bg-white shadow-md rounded">
+                <h2 class="text-xl font-bold mb-2">โปรโมชั่น</h2>
+                <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover ">
+                            <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
+                        </span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover ">
+                            <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
+                        </span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="toggleSection3" class="hidden mt-4 p-4 bg-white shadow-md rounded">
+                <h2 class="text-xl font-bold mb-2">มาใหม่</h2>
+                <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover ">
+                            <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                        </span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
+                        <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
+    
+                            <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
+                                class="w-full h-full object-cover ">
+                            <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
+                        </span>
+                        </div>
+                        <div class="px-6 py-4 text-center">
+                            <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
+                            <p class="text-white text-base">
+                                Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var buttons = document.querySelectorAll('.toggle-btn');
+                var sections = [
+                    document.getElementById('toggleSection1'),
+                    document.getElementById('toggleSection2'),
+                    document.getElementById('toggleSection3')
+                ];
+    
+                buttons.forEach((button, index) => {
+                    button.addEventListener('click', function() {
+                        var isActive = button.classList.contains('bg-green-500');
+                        buttons.forEach(btn => btn.classList.remove('bg-green-500', 'text-white'));
+                        sections.forEach(sec => sec.classList.add('hidden'));
+    
+                        if (!isActive) {
+                            button.classList.add('bg-green-500', 'text-white');
+                            sections[index].classList.remove('hidden');
+                        } else {
+                            button.classList.remove('bg-green-500', 'text-white');
+                            sections[index].classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        </script>
+    </div>
+
+            <!-- Why Us Section -->
+            <section class="mt-4 bg-white p-4 shadow rounded">
+                <h2 class="text-xl font-bold mb-2">ทำไมต้องใช้บริการกับเรา?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Habitant tincidunt id quis mattis. Dui eget vitae potenti mattis
+                    est.</p>
+            </section>
     </main>
 
     <!-- Footer -->
