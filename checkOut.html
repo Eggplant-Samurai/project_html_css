@@ -18,10 +18,17 @@
       >
         <div class="flex flex-col items-center">
           <div
-            id="circleStatus"
-            class="w-16 h-16 bg-[#CDECFF] rounded-full grid place-content-center"
+            id="innerCircle"
+            class="w-16 h-16 rounded-full bg-[#1E3769] relative"
           >
-            1
+            <div
+              id="leftCheck"
+              class="w-[4.5px] h-[16px] top-[29px] left-[22px] -rotate-45 rounded-full bg-white absolute"
+            ></div>
+            <div
+              id="rightCheck"
+              class="w-[4.5px] h-[31px] top-[16px] left-[36px] rotate-45 rounded-full bg-white absolute"
+            ></div>
           </div>
           <p>กรอกข้อมูล</p>
         </div>
@@ -53,14 +60,15 @@
         <div id="inform" class="flex flex-col w-[760px]">
           <div
             id="login"
-            class="h-[74px] mb-6 flex justify-between items-center bg-[#CDECFF] rounded-lg text-2xl font-semibold  "
+            class="h-[74px] mb-6 flex justify-between items-center bg-[#CDECFF] rounded-lg text-2xl font-semibold"
           >
             <p class="m-[24px]">เข้าสู่ระบบเพื่อใช้งานเต็มรูปแบบ</p>
-            <p
+
+            <a
+              href=""
               class="w-[245px] h-full grid place-content-center bg-[#3E5685] rounded-lg text-white"
+              ><p>โปรดเข้าสู่ระบบ</p></a
             >
-              <a href="">โปรดเข้าสู่ระบบ</a>
-            </p>
           </div>
           <div
             id="informUser"
@@ -71,27 +79,52 @@
             <input
               type="text"
               placeholder="ชื่อจริง"
-              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg text-[#E1E1E1] border border-[#E1E1E1] rounded-lg font-medium"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
             />
             <input
               type="text"
               placeholder="นามสกุล"
-              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg text-[#E1E1E1] border border-[#E1E1E1] rounded-lg font-medium"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
             />
             <input
-              type="text"
+              type="email"
               placeholder="อีเมล์"
-              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg text-[#E1E1E1] border border-[#E1E1E1] rounded-lg font-medium"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
             />
             <input
               type="text"
               placeholder="จุดประสงค์ในการใช้รถ"
-              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg text-[#E1E1E1] border border-[#E1E1E1] rounded-lg font-medium"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
             />
             <input
               type="text"
               placeholder="ข้อมูลเพิ่มเติม (ถ้ามี)"
-              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg text-[#E1E1E1] border border-[#E1E1E1] rounded-lg font-medium"
+              class="max-w-[718px] h-[67px] py-5 px-8 rounded-lg border border-[#E1E1E1] rounded-lg font-medium"
+              style="
+                ::placeholder {
+                  color: #e1e1e1;
+                }
+              "
             />
           </div>
           <div
@@ -104,11 +137,11 @@
                 >กรุณาตรวจสอบข้อมูลการเช่าให้ครบถ้วนก่อนการกดยืนยัน</label
               >
             </div>
-            <input
-              type="button"
-              value="เช่ารถคันนี้"
-              class="mx-5 h-[50px] bg-[#3E5685] rounded-lg text-white text-2xl"
-            />
+            <a
+              href="./checkOut2.html"
+              class="mx-5 h-[50px] bg-[#3E5685] rounded-lg text-white text-2xl flex justify-center"
+              ><input type="button" value="เช่ารถคันนี้" class="cursor-pointer"
+            /></a>
           </div>
         </div>
         <div
