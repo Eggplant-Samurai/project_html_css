@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/champ.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="navbar"></div>
+    </header>
+    <!-- Photo -->
+    <section class="flex my-9 max-md:flex justify-center">
+        <!-- left -->
+          <div class=" relative md:w-1/2 ">
+            <div class="show ">
+              <img  src="/assets/bmw/X4/X4-main.jpg" class="w-full ">
+            </div>
+            <div class="show hidden">
+              <img src="/assets/bmw/X4/X4-1.jpg" class="w-full">
+            </div>
+            <div class="show hidden">
+              <img src="/assets/bmw/X4/X4-2.jpg" class="w-full">
+            </div>
+            <div class="show hidden">
+              <img src="/assets/bmw/X4/X4-3.jpg" class="w-full">
+            </div>
+            <div class="show hidden">
+              <img src="/assets/bmw/X4/X4-4.jpg" class="w-full">
+            </div>
+            <div class="show hidden">
+              <img src="/assets/bmw/X4/X4-5.jpg" class="w-full">
+            </div>
+        
+            <div class="absolute w-full flex justify-between px-4 top-28 max-md:hidden text-3xl font-black select-none">
+              <a class="cursor-pointer  backdrop-blur-sm bg-white/30  bg-gray-800	rounded-full px-4 hover:text-gray-500  " onclick="plusSlides(-1)">❮</a>
+              <a class="cursor-pointer backdrop-blur-sm bg-white/30  bg-gray-800 rounded-full	 px-4 hover:text-gray-500 " onclick="plusSlides(1)">❯</a>
+            </div>
+            
+            <div class=" flex w-1/6 md: my-2">
+            <img class="silde cursor-pointer" src="/assets/bmw/X4/X4-main.jpg" onclick="currentSlide(1)" alt="">
+            <img class="silde cursor-pointer" src="/assets//bmw/X4/X4-1.jpg" onclick="currentSlide(2)" alt="">
+            <img class="silde cursor-pointer" src="/assets/bmw/X4/X4-2.jpg" onclick="currentSlide(3)" alt="">
+            <img class="silde cursor-pointer" src="/assets/bmw/X4/X4-3.jpg" onclick="currentSlide(4)" alt="">
+            <img class="silde cursor-pointer" src="/assets/bmw/X4/X4-4.jpg" onclick="currentSlide(5)" alt="">
+            <img class="silde cursor-pointer" src="/assets//bmw/X4/X4-5.jpg" onclick="currentSlide(6)" alt="">
+            </div>
+
+            <div class="md:hidden">
+              <h1 class="mb-2 font-black text-xl mx-4 my-4">
+                Mercedes-Benz EQS-450
+                </h1>
+            </div>
+      
+           <!-- detail -->
+            <section>
+              <main>
+                <h4 class="font-medium mx-4 mt-4 text-[20px]">Detail</h4>
+                <div class="border-t-2 border-t-blue-950 w-[68px] mx-4"></div>
+                <div class="border-t border-gray-300 mx-4 py-1"></div> 
+                <p class="mt-3 mx-4 text-[14px]">
+                  EQS 450 คือรุ่นยนต์ไฟฟ้าของ Mercedes-Benz ที่เป็นส่วนหนึ่งของตระกูล EQ ซึ่งเป็นรถยนต์ไฟฟ้าแบบเต็มรูปแบบของบริษัท มันเป็นรถยนต์ที่มุ่งหน้าไปสู่การขับขี่ที่ยั่งยืนและยังความสวยงามของรถยนต์เล็กทุกความเร็ว รถยนต์รุ่นนี้มาพร้อมกับความสามารถในการขับขี่ไกลโดยใช้พลังงานไฟฟ้า ด้วยชุดแบตเตอรี่ขนาดใหญ่ที่ให้ระยะทางขับขี่ที่ยาวนาน และมีสมรรถนะขับเคลื่อนที่ยอดเยี่ยม นอกจากนี้ มันยังมีดีไซน์ที่หรูหราและสมวัยมาพร้อมกับเทคโนโลยีที่ล้ำหน้าอื่นๆ ที่ช่วยให้ EQS 450 เป็นตัวเลือกที่น่าสนใจสำหรับผู้ที่ต้องการรถยนต์ไฟฟ้าระดับพรีเมียมที่สมบูรณ์แบบ
+                </p>
+
+                <!-- freature -->
+                <h4 class="text-[20px] font-medium mt-2 mx-4">Feature</h4>
+                <div class="border-t-2 border-t-blue-950 w-[68px] mx-4"></div>
+                <div class="border-t border-gray-300 mx-4 py-1"></div> 
+                
+                  <div class="text-[14px]">
+                    <li class="mx-4 max-md:my-2">ด้วยระบบขับเคลื่อนไฟฟ้า มันมอบประสิทธิภาพการขับขี่ที่เงียบสงบและมีเสน่ห์
+                    </li>
+                    <li class="snap-center mx-4 max-md:my-2" >มีชุดแบตเตอรี่ขนาดใหญ่ที่ให้ระยะทางขับขี่ไกลโดยไม่ต้องเติมพลังงานบ่อยครั้ง</li>
+                    <li class="mx-4 max-md:my-2">ด้วยดีไซน์ที่สวยงามและหรูหราที่มาพร้อมกับเส้นโค้งที่นุ่มนวลและความสมดุลของรถยนต์</li>
+                    <li class="mx-4 max-md:my-2">มีการนำเทคโนโลยีล้ำหน้ามาใช้ในระบบการขับขี่อัจฉริยะ, การเชื่อมต่อ, และความปลอดภัย เพื่อประสบการณ์ขับขี่ที่ปลอดภัยและสะดวกสบาย</li>
+                    <li class="mx-4 max-md:my-2">มาพร้อมกับองค์ประกอบภายในที่หรูหราและสะดวกสบาย, รวมถึงประสิทธิภาพขับขี่ที่ดีและการควบคุมที่แม่นยำ</li>
+                  </div>
+
+
+                <!-- review part -->
+              
+                <h4 class="font-medium mx-4 mt-4 text-[20px]">Review </h4>
+                <div class="border-t-2 border-t-blue-950 w-[68px] mx-4"></div>
+                <div class="border-t border-gray-300 mx-4 py-1"></div> 
+
+                
+                <div class="border shadow-sm rounded-[5px] mx-4 py-2 flex justify-between">
+                  <div class="mx-4">
+                    <div class="flex justify-center">
+                      <img class="mr-1 mt-[6px] h-[13px]"
+                      src="../../icon/star.png"
+                      alt='favourite'/>
+                      <p>4.9</p>
+                    </div>
+                      <p>เรตติ้งทั้งหมด</p>
+                  </div> 
+                  <div>
+                    <div class="flex justify-center">
+                      <img class="mr-1 mt-[6px] h-[13px]"
+                      src="../../icon/star.png"
+                      alt='favourite'/>
+                      <p>100%</p>
+                    </div>
+                      <p>ได้รถคันที่จอง</p>
+                  </div> 
+                  <div class="mx-4">
+                    <div class="flex justify-center">
+                      <img class="mr-1 mt-[6px] h-[13px]"
+                      src="../../icon/star.png"
+                      alt='favourite'/>
+                      <p>30</p>
+                    </div>
+                      <p>รายการโปรดทั้งหมด</p>
+                  </div> 
+                </div>
+                  
+            
+                
+                <div class="border shadow-sm rounded-[5px] mx-4 py-2 flex justify-center mt-4">
+                  <button type="button" class="rounded-[5px] bg-[#3E5685] text-white py-2 w-[280px] ">คะแนนรถคันนี้</button>
+                  <button type="button" class="rounded-[5px] py-2 w-[280px]">ให้คะแนนรถคันนี้</button>
+                </div>
+
+
+                <div class="text-[14px] my-2">
+                  <div class="flex sm:gap-6 mx-4">
+                    <div class="w-full flex justify-between">
+                      <span>สภาพโดยรวม</span>
+                      <span>5.0</span>
+                    </div>
+                    <div class="w-full flex justify-between">
+                      <span>คุ้มค่าเงินที่จ่าย</span>
+                      <span>5.0</span>
+                    </div>
+                  </div>
+                  <div class="flex sm:gap-6 mx-4">
+                    <div class=" w-full flex justify-between">
+                      <span>การบริการจากเจ้าหน้าที่</span>
+                      <span>5.0</span>
+                    </div>
+                    <div class=" w-full flex justify-between">
+                      <span>lorem</span>
+                      <span>5.0</span>
+                    </div>
+                  </div>
+                </div>
+              
+
+              </main>
+
+                  <!-- mobile -->
+                  <div class="flex justify-between mx-4">
+                      <h2 class="md:hidden text-xl ">ราคา</h2>
+                      <h2 class="md:hidden text-xl font-black"> ฿3,000/วัน</h2>
+                  </div>
+                  <button class="md:hidden text-2xl bg-gray-600 w-full text-white pb-2 hover:bg-blue-950 ">Booking</button>
+
+
+            </section>
+          </div> 
+
+        
+       
+           
+        <!-- right -->
+          <div>
+            <div class="ml-8 max-md:hidden rounded-[20px] border shadow-md h-[311px] w-auto">
+              <h2 class="ml-6 mt-4 font-black text-[]"> Detail</h2> 
+              <h2 class="ml-6 mt-2 mb-2 font-black text-[]"> Mercedes-Benz 
+                        GLC 300 4MATIC</h2>
+              <h2 class="mb-2 ml-40">ราคา ฿20,000/วัน</h2>
+              <div class="flex flex-col gap-2">
+                <button class="bg-[#3E5685] text-white mx-6 px-24 py-2 hover:bg-blue-950 rounded-md">Booking</button>
+                <div >
+                  <button class="bg-[#191f2c] text-white ml-6 py-2 px-10 hover:bg-blue-950 rounded-md">Add to favourite</button>
+                  <button class="border border-gray-400 py-2 px-1.5 hover:bg-blue-950 rounded-md">Share</button>
+                </div>
+              </div>
+            </div>
+
+            <div>
+
+
+
+
+
+            </div>
+            <div>
+              <p class="ml-8 py-2 my-2 bg-[#3E5685] text-white hover:bg-blue-950 rounded-md text-[17px] w-[300px] mt-6 pl-4">เงื่อนไขข้อตกลง</p>
+              <p class="ml-8 py-2 my-2 bg-[#3E5685] text-white hover:bg-blue-950 rounded-md text-[17px] w-[300px] mt-6 pl-4">เอกสารที่ใช้เช่ารถ</p>
+              <p class="ml-8 py-2 my-2 bg-[#3E5685] text-white hover:bg-blue-950 rounded-md text-[17px] w-[300px] mt-6 pl-4">ประกันภัยรถยนต์</p>
+              <p class="ml-8 py-2 my-2 bg-[#3E5685] text-white hover:bg-blue-950 rounded-md text-[17px] w-[300px] mt-6 pl-4">อื่นๆ</p>
+            </div>
+          </div>
+
+          
+
+      
+
+
+
+
+    </section>
+  </body>
