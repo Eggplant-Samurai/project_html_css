@@ -16,11 +16,11 @@ document
 
       reader.readAsDataURL(file);
     } 
-    // else {
-    //   preview.src = "";
-    //   preview.style.display = "none";
-    //   defaultImage.style.display = "block";
-    // }
+    else {
+      preview.src = "";
+      preview.style.display = "none";
+      defaultImage.style.display = "block";
+    }
   });
 
 function myFunction() {
