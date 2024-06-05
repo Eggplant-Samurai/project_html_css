@@ -1,0 +1,1 @@
+ทำ ui product card อยู่ในไฟล์ rent และ viewrent/bmw/x4 ยังทำไม่ครบ
