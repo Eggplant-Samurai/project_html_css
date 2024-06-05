@@ -24,11 +24,12 @@
         <nav>
             <!-- Top Navigation Menu -->
             <div class="bg-blue-900 text-white flex justify-between">
-                <a href="#home"><img src="/assets/logo.png" alt=""></a>
+                <a href="#home"><img src="/assets/logo_footer/logo1.png" alt="" class="h-14 md:h-full"></a>
 
                 <div class="flex gap-8">
                     <a href="">
-                        <img class="mt-7 ml-36 w-1/5 md:hidden" src="/assets/🦆 icon _United States_.png" alt="">
+                        <img class="mt-3 ml-36 h-8  md:hidden"
+                            src="/assets/logo_footer/american-flag-transparent-circle-2.png" alt="">
                     </a>
                     <a href="javascript:void(0);" class="flex flex-col justify-center mr-3" onclick="myFunction()">
                         <img class="md:hidden" src="/assets/menu.png" onClick="toggleMobileMenu();" alt="">
@@ -47,60 +48,62 @@
 
             </div>
 
-            <!-- mobile -->
-            <!-- <ul id="burger"
-                class="hidden  flex-col items-center bg-gray-600 text-white text-4xl py-36 gap-16 md:hidden ">
-                <li><a class="hover:underline" href="/Rent .html">บริการเช่า</a></li>
-                <li><a class="hover:underline" href="/buying.html">ต้องการซื้อ</a></li>
-                <li><a class="hover:underline" href="#">ต้องการขาย</a></li>
-                <button class="bg-gray-800 py-2  w-full hover:bg-blue-950">login</button>
-            </ul> -->
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto pt-4 bg-gray-300">
+    <main class="container mx-auto ">
         <!-- Car Image and Slideshow -->
-        <div class="relative p-4 shadow rounded w-flex overflow-hidden h-flex ">
+        <div class="relative shadow w-flex overflow-hidden h-flex ">
             <div class="carousel-item active">
-                <img src="Assets/carModel/Audi.jpg" alt="Audi" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/Audi.jpg" alt="Audi" class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
-                <img src="Assets/carModel/BMW.jpg" alt="BMW" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/BMW.jpg" alt="BMW" class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
-                <img src="Assets/carModel/JAGUAR-XF.jpg" alt="JAGUAR" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/JAGUAR-XF.jpg" alt="JAGUAR" class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
-                <img src="Assets/carModel/LandRover.jpg" alt="LandRover" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/LandRover.jpg" alt="LandRover" class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
                 <img src="Assets/carModel/Mercedes-Benz.jpg" alt="Mercedes-Benz"
                     class="w-full h-full object-cover rounded">
             </div>
             <div class="carousel-item">
-                <img src="Assets/carModel/mini.jpg" alt="mini" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/mini.jpg" alt="mini" class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
-                <img src="Assets/carModel/Peugeot.jpg" alt="Peugeot" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/Peugeot.jpg" alt="Peugeot" class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
-                <img src="Assets/carModel/Porsche.jpg" alt="Porsche" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/Porsche.jpg" alt="Porsche" class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
                 <img src="Assets/carModel/Tesla-Model-Y-RWD.jpg" alt="Tesla-Model-Y-RWD"
-                    class="w-full h-full object-cover rounded">
+                    class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
-                <img src="Assets/carModel/Volkswagen.jpg" alt="Volkswagen" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/Volkswagen.jpg" alt="Volkswagen" class="w-full h-full object-cover ">
             </div>
             <div class="carousel-item">
-                <img src="Assets/carModel/Volvo.jpg" alt="Volvo" class="w-full h-full object-cover rounded">
+                <img src="Assets/carModel/Volvo.jpg" alt="Volvo" class="w-full h-full object-cover ">
             </div>
-            <button onclick="prevSlide()"
-                class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded">Prev</button>
-            <button onclick="nextSlide()"
-                class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded">Next</button>
+            <img onclick="prevSlide()" src="./assets/logo_footer/left.png"
+                class="absolute left-2 top-1/2 transform -translate-y-1/2 p-2 rounded cursor-pointer">
+            <img onclick="nextSlide()" src="./assets/logo_footer/right.png"
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 rounded cursor-pointer">
+        </div>
+
+        <!-- toggle mobile -->
+        <div class="inline-flex space-x-2 bg-gray-300 w-full justify-around md:hidden">
+            <button id="button1"
+                class="toggle-btn px-5 my-2 rounded-xl text-blue-950 hover:bg-slate-400">แนะนำประจำวัน</button>
+            <button id="button2"
+                class="toggle-btn px-5 my-2 rounded-xl text-blue-950 hover:bg-slate-400">โปรโมชั่น</button>
+            <button id="button3"
+                class="toggle-btn px-5 my-2 rounded-xl text-blue-950 hover:bg-slate-400">มาใหม่</button>
         </div>
 
         <!-- Car Brands -->
@@ -134,14 +137,14 @@
 
         <!------------------------------ Destop --------------------------------------------------------------->
 
-        <div class="md:flex md:flex-col hidden">
+        <div class="md:flex md:flex-col hidden ">
             <section class="mt-4 p-4 shadow rounded ">
                 <h2 class="text-xl font-bold mb-2">แนะนำประจำวัน</h2>
-                <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
+                <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap ">
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -183,7 +186,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -234,7 +237,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -279,7 +282,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -324,7 +327,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -369,7 +372,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -423,7 +426,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -465,7 +468,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -507,7 +510,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -549,7 +552,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -591,7 +594,7 @@
                     <!-- car1 -->
 
                     <div
-                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px]">
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
                         <div class="flex justify-between">
                             <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
                             <div class="flex ">
@@ -641,113 +644,134 @@
         <!------------------------------ Mobile --------------------------------------------------------------->
         <div class="flex md:hidden">
             <div>
-                <div class="inline-flex space-x-2">
-                    <button id="button1"
-                        class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">แนะนำประจำวัน</button>
-                    <button id="button2" class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">โปรโมชั่น</button>
-                    <button id="button3" class="toggle-btn px-4 py-2 bg-blue-500 text-white rounded">มาใหม่</button>
-                </div>
+
                 <section id="toggleSection1" class="hidden mt-4 p-4 bg-white shadow-md rounded">
-                    <h2 class="text-xl font-bold mb-2">แนะนำประจำวัน</h2>
-                    <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
-                        <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
-                            <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
-
-                                <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
-                                        class="w-full h-full object-cover "></span>
-                            </div>
-                            <div class="px-6 py-4 text-center">
-                                <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
-                                <p class="text-white text-base">
-                                    Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
-                                </p>
+                    <div
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
+                        <div class="flex justify-between">
+                            <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
+                            <div class="flex ">
+                                <img class="mr-1 mt-[23px] h-[10px]" src="icon/star.png" alt='favourite' />
+                                <h3 class="mr-6 mt-5 font-black text-xs ">4.8/5.0</h3>
                             </div>
                         </div>
-                        <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
-                            <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
-
-                                <span><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
-                                        class="w-full h-full object-cover "></span>
-                            </div>
-                            <div class="px-6 py-4 text-center">
-                                <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
-                                <p class="text-white text-base">
-                                    Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
-                                </p>
+                        <div class="flex justify-between mt-1">
+                            <h4 class="mx-6 font-extralight text-[14px] -mt-1">Sedan</h4>
+                            <div class="flex h-[15px] ">
+                                <img class="mr-2" src="icon/heart.png" alt='favourite' />
+                                <img class="mr-6" src="icon/sharenetwork.png" alt='sharenetwork' />
                             </div>
                         </div>
+                        <img class="object-scale-down h-[180px] w-[260px] self-center"
+                            src="assets/benz/GLC 300 4MATIC/GLC 300 4MATIC.png" alt='BenzGlc300' />
+
+
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <img class="ml-6 object-scale-down" src="icon/location.png" alt='location' />
+                                <p class="ml-1 text-[15px]">Bangkok,Thailand</p>
+                            </div>
+                            <div class="flex mx-6 text-[15px]">
+                                <h4>PRICE</h4>
+                                <h4 class="mx-1 font-bold">฿20,000</h4>
+                                <h4>/Day</h4>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-300 mx-7 my-1 py-1"></div>
+
+                        <button class="mx-6 py-2 bg-[#3E5685] text-white hover:bg-blue-950 rounded-md text-[18px]"><a
+                                href="/view_rent/bmw/X4.html">Buy now</a></button>
+                        <button class="mb-4 mt-2 underline px-3 hover:text-blue-900 text-[14px]"><a
+                                href="/view_rent/bmw/X4.html">View Detail</a></button>
                     </div>
                 </section>
                 <section id="toggleSection2" class="hidden mt-4 p-4 bg-white shadow-md rounded">
-                    <h2 class="text-xl font-bold mb-2">โปรโมชั่น</h2>
-                    <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
-                        <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
-                            <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
-
-                                <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
-                                        class="w-full h-full object-cover ">
-                                    <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
-                                </span>
-                            </div>
-                            <div class="px-6 py-4 text-center">
-                                <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
-                                <p class="text-white text-base">
-                                    Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
-                                </p>
+                    <div
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
+                        <div class="flex justify-between">
+                            <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
+                            <div class="flex ">
+                                <img class="mr-1 mt-[23px] h-[10px]" src="icon/star.png" alt='favourite' />
+                                <h3 class="mr-6 mt-5 font-black text-xs ">4.8/5.0</h3>
                             </div>
                         </div>
-                        <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
-                            <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
-
-                                <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
-                                        class="w-full h-full object-cover ">
-                                    <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
-                                </span>
-                            </div>
-                            <div class="px-6 py-4 text-center">
-                                <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
-                                <p class="text-white text-base">
-                                    Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
-                                </p>
+                        <div class="flex justify-between mt-1">
+                            <h4 class="mx-6 font-extralight text-[14px] -mt-1">Sedan</h4>
+                            <div class="flex h-[15px] ">
+                                <img class="mr-2" src="icon/heart.png" alt='favourite' />
+                                <img class="mr-6" src="icon/sharenetwork.png" alt='sharenetwork' />
                             </div>
                         </div>
+
+                        <span class="relative container"><img class="object-scale-down h-[180px] w-[260px] self-center"
+                                src="assets/benz/GLC 300 4MATIC/GLC 300 4MATIC.png" alt='BenzGlc300' />
+                            <span class="absolute bg-yellow-600 bottom-0 right-0 text-white">10% off</span>
+                        </span>
+
+
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <img class="ml-6 object-scale-down" src="icon/location.png" alt='location' />
+                                <p class="ml-1 text-[15px]">Bangkok,Thailand</p>
+                            </div>
+                            <div class="flex mx-6 text-[15px]">
+                                <h4>PRICE</h4>
+                                <h4 class="mx-1 font-bold">฿20,000</h4>
+                                <h4>/Day</h4>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-300 mx-7 my-1 py-1"></div>
+
+                        <button class="mx-6 py-2 bg-[#3E5685] text-white hover:bg-blue-950 rounded-md text-[18px]"><a
+                                href="/view_rent/bmw/X4.html">Rent now</a></button>
+                        <button class="mb-4 mt-2 underline px-3 hover:text-blue-900 text-[14px]"><a
+                                href="/view_rent/bmw/X4.html">View Detail</a></button>
                     </div>
                 </section>
                 <section id="toggleSection3" class="hidden mt-4 p-4 bg-white shadow-md rounded">
-                    <h2 class="text-xl font-bold mb-2">มาใหม่</h2>
-                    <div class="flex gap-4 w-full overflow-x-auto whitespace-nowrap">
-                        <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
-                            <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
-
-                                <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
-                                        class="w-full h-full object-cover ">
-                                    <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
-                                </span>
-                            </div>
-                            <div class="px-6 py-4 text-center">
-                                <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
-                                <p class="text-white text-base">
-                                    Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
-                                </p>
+                    <div
+                        class="max-md:w-full bg-white rounded-[20px] border-t shadow-md flex flex-col h-[360px] w-[383px] my-2">
+                        <div class="flex justify-between">
+                            <h3 class="ml-6 mt-4 font-black text-[16px]">BENZ GLC 300 4MATIC</h3>
+                            <div class="flex ">
+                                <img class="mr-1 mt-[23px] h-[10px]" src="icon/star.png" alt='favourite' />
+                                <h3 class="mr-6 mt-5 font-black text-xs ">4.8/5.0</h3>
                             </div>
                         </div>
-                        <div class="container  rounded-lg w-80  bg-blue-900  border-blue-400">
-                            <div class=" flex items-center justify-center overflow-hidden rounded-t-lg">
-
-                                <span class="relative container"><img src="Assets/Audi/A6/Audi_A6_main.webp" alt="Audi"
-                                        class="w-full h-full object-cover ">
-                                    <span class="absolute bg-red-600 top-0 right-0 text-white">New!!</span>
-                                </span>
-                            </div>
-                            <div class="px-6 py-4 text-center">
-                                <div class="font-bold text-xl mb-2 text-white">เช่ารถ</div>
-                                <p class="text-white text-base">
-                                    Lorem ipsum dolor sit amet consectetur. Habitant tincidunt
-                                </p>
+                        <div class="flex justify-between mt-1">
+                            <h4 class="mx-6 font-extralight text-[14px] -mt-1">Sedan</h4>
+                            <div class="flex h-[15px] ">
+                                <img class="mr-2" src="icon/heart.png" alt='favourite' />
+                                <img class="mr-6" src="icon/sharenetwork.png" alt='sharenetwork' />
                             </div>
                         </div>
+                        <img class="object-scale-down h-[180px] w-[260px] self-center"
+                            src="assets/benz/GLC 300 4MATIC/GLC 300 4MATIC.png" alt='BenzGlc300' />
+
+
+                        <div class="flex justify-between">
+                            <div class="flex">
+                                <img class="ml-6 object-scale-down" src="icon/location.png" alt='location' />
+                                <p class="ml-1 text-[15px]">Bangkok,Thailand</p>
+                            </div>
+                            <div class="flex mx-6 text-[15px]">
+                                <h4>PRICE</h4>
+                                <h4 class="mx-1 font-bold">฿20,000</h4>
+                                <h4>/Day</h4>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-gray-300 mx-7 my-1 py-1"></div>
+
+                        <button class="mx-6 py-2 bg-[#3E5685] text-white hover:bg-blue-950 rounded-md text-[18px]"><a
+                                href="/view_rent/bmw/X4.html">Buy now</a></button>
+                        <button class="mb-4 mt-2 underline px-3 hover:text-blue-900 text-[14px]"><a
+                                href="/view_rent/bmw/X4.html">View Detail</a></button>
                     </div>
                 </section>
+
             </div>
 
             <script>
@@ -761,20 +785,20 @@
 
                     buttons.forEach((button, index) => {
                         button.addEventListener('click', function () {
-                            var isActive = button.classList.contains('bg-green-500');
-                            buttons.forEach(btn => btn.classList.remove('bg-green-500',
-                                'text-white'));
+                            var isActive = button.classList.contains('');
+                            buttons.forEach(btn => btn.classList.remove('text-white',
+                                'bg-gray-400'));
                             sections.forEach(sec => sec.classList.add('hidden'));
-
                             if (!isActive) {
-                                button.classList.add('bg-green-500', 'text-white');
+                                button.classList.add('text-white', 'bg-gray-400');
                                 sections[index].classList.remove('hidden');
                             } else {
-                                button.classList.remove('bg-green-500', 'text-white');
+                                button.classList.remove('text-white', 'bg-gray-400');
                                 sections[index].classList.add('hidden');
                             }
                         });
                     });
+
                 });
             </script>
         </div>
@@ -798,7 +822,6 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.js"></script>
-    </main>
 
     <!-- Footer -->
     <footer class="bg-blue-900 text-white p-8">
