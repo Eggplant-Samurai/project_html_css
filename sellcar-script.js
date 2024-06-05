@@ -15,7 +15,8 @@ document
       };
 
       reader.readAsDataURL(file);
-    } else {
+    } 
+    else {
       preview.src = "";
       preview.style.display = "none";
       defaultImage.style.display = "block";
