@@ -36,11 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .catch(error => console.error('Error loading navbar:', error));
 });
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 30cb41e776533e5258f61222adf1bf9016e7715a
+
 let selectPath = 'select.html';
 fetch(selectPath)
 .then(Response=>Response.text())
@@ -56,10 +52,7 @@ fetch(selectbuy)
   document.getElementById('selectbuy').innerHTML = data;
 })
 .catch(error =>console.error('Error loading select page',error));
-<<<<<<< HEAD
-=======
->>>>>>> 6a5e63e2e7dc9b192d091f0cdb1cf87ca7f53337
->>>>>>> 30cb41e776533e5258f61222adf1bf9016e7715a
+
 
 
 // burger bar
